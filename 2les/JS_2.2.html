@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type='text/javascript'>
+		/*
+			Задание 2
+				Дано два числа A и B где (A<B).
+				Выведите на экран суму всех чисел расположенных в числовом промежутке от А до В.
+				Выведите на экран все нечетные значения, расположенные в числовом промежутке от А до В.
+		*/
+		var a=prompt('Input A ','');
+		var b=prompt('Input B > '+a,'');		
+		var i,sum=0;
+		if (a>b){
+			alert("а повинна бути меншою ніж б");
+		}
+		else{
+			document.write("Непарні числа : ");
+			for(i=a;i<=b;i++){
+				sum=sum+ +i;
+				if(i%2!=0){
+					document.write(i);
+				}
+			}
+			document.writeln("<br>Сума всіх чисел = "+sum);
+		}
+	
+	</script>
+</body>
+</html>

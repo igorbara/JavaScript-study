@@ -1,0 +1,29 @@
+<html>
+<head></head>
+<body>
+	
+		<script type="text/javascript">
+		var x=6;
+		var y=15;
+		var z=4;
+
+		document.write("<pre>");
+		
+		x+=y-x++*z;  //x=-3
+		document.writeln(x);
+		
+		z=--x-y*5;   //z=-79 x=-4
+		document.writeln(z);
+		
+		y/=x+5%z;    //y=15 
+		document.writeln(y);
+		
+		z=x++ +y*5;  //z=71 x=-3
+		document.writeln(z);
+		
+		x=y-x++*z;  //x=228 x=-2 
+		document.writeln(x);
+		
+		</script>
+</body>
+</html>

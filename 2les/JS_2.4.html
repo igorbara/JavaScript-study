@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type='text/javascript'>
+	/*
+		Задание 4
+			Используя циклы нарисуйте в браузере с помощью пробелов (&nbsp) и звездочек (*):
+			·  Прямоугольник
+			·  Прямоугольный треугольник
+			·  Равносторонний треугольник
+			·  Ромб.
+	*/
+	var width=prompt("Введіть ширину фігур ","");
+	var heigth=prompt("Введіть висоту фігур ","");
+	var i,j;
+	document.write("<pre>");
+	//прямокутник
+	for(i=1;i<=heigth;i++){
+		for(j=1;j<=width;j++){
+			if (i==1 || j==1 || j==width || i==heigth){
+				document.write("*");
+			}
+			else{
+				document.write("&nbsp");
+			}	
+		}
+		document.write("<br>");
+	}
+	//прямокутний трикутник
+	var str="*";
+	for(i=1;i<=heigth;i++){
+		for(j=1;j<=width;j++){
+			if (j==1 || j==i  || i==heigth){
+				document.write("*");
+			}
+			else{
+				document.write("&nbsp");
+			}	
+		}
+		document.write("<br>");
+	}
+	
+	</script>
+</body>
+</html>
